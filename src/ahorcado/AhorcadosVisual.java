@@ -508,7 +508,7 @@ public class AhorcadosVisual extends javax.swing.JFrame {
         PalabraOcultaLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel1.add(PalabraOcultaLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 321, 490, 40));
 
-        IntentosLabel.setFont(new java.awt.Font("Avenir Next Condensed", 1, 36)); // NOI18N
+        IntentosLabel.setFont(new java.awt.Font("Avenir Next Condensed", 1, 24)); // NOI18N
         IntentosLabel.setForeground(new java.awt.Color(255, 255, 255));
         IntentosLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         IntentosLabel.setText("1");
