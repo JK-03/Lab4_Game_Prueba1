@@ -21,7 +21,7 @@ class JuegoAhorcadoAzar extends JuegoAhorcadoBase {
     private void iniciarNuevoJuegoP() {
         this.palabraSecreta = seleccionarPalabraAzar();
         this.palabraActual = generarPalabraActual(this.palabraSecreta);
-        this.intentos = 6;
+        this.intentos = 10;
         this.partidaGanada = false;
     }
 

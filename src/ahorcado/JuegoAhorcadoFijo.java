@@ -13,7 +13,7 @@ class JuegoAhorcadoFijo extends JuegoAhorcadoBase {
     public JuegoAhorcadoFijo(String palabraSecreta) {
         this.palabraSecreta = palabraSecreta.toUpperCase();
         this.palabraActual = generarPalabraActual(this.palabraSecreta);
-        this.intentos = 6; // Ajustar este valor según la dificultad deseada
+        this.intentos = 10;
     }
 
     @Override
@@ -25,9 +25,9 @@ class JuegoAhorcadoFijo extends JuegoAhorcadoBase {
         StringBuilder palabraActualBuilder = new StringBuilder();
         for (char c : palabraSecreta.toCharArray()) {
             if (Character.isWhitespace(c)) {
-                palabraActualBuilder.append("  "); // Doble espacio para separar las palabras
+                palabraActualBuilder.append("  ");
             } else {
-                palabraActualBuilder.append("_ "); // Guion bajo seguido de un espacio para letras no reveladas
+                palabraActualBuilder.append("_ ");
             }
         }
         return palabraActualBuilder.toString();
