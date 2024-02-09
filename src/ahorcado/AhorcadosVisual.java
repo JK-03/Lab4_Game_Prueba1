@@ -19,6 +19,10 @@ public class AhorcadosVisual extends javax.swing.JFrame {
     public AhorcadosVisual() {
         initComponents();
         
+        Intento9.setVisible(false);
+        Intento8.setVisible(false);
+        Intento7.setVisible(false);
+        Intento6.setVisible(false);
         Intento5.setVisible(false);
         Intento4.setVisible(false);
         Intento3.setVisible(false);
@@ -74,6 +78,10 @@ public class AhorcadosVisual extends javax.swing.JFrame {
         BotonRegresar = new javax.swing.JLabel();
         PalabraOcultaLabel = new javax.swing.JLabel();
         IntentosLabel = new javax.swing.JLabel();
+        Intento9 = new javax.swing.JLabel();
+        Intento8 = new javax.swing.JLabel();
+        Intento7 = new javax.swing.JLabel();
+        Intento6 = new javax.swing.JLabel();
         Intento5 = new javax.swing.JLabel();
         Intento4 = new javax.swing.JLabel();
         Intento3 = new javax.swing.JLabel();
@@ -514,6 +522,18 @@ public class AhorcadosVisual extends javax.swing.JFrame {
         IntentosLabel.setText("1");
         jPanel1.add(IntentosLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 84, 30, 30));
 
+        Intento9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Elementos/Intento9.png"))); // NOI18N
+        jPanel1.add(Intento9, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 60, 270, 220));
+
+        Intento8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Elementos/Intento8.png"))); // NOI18N
+        jPanel1.add(Intento8, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 60, 270, 220));
+
+        Intento7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Elementos/Intento7.png"))); // NOI18N
+        jPanel1.add(Intento7, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 60, 270, 220));
+
+        Intento6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Elementos/Intento6.png"))); // NOI18N
+        jPanel1.add(Intento6, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 60, 270, 220));
+
         Intento5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Elementos/Intento5.png"))); // NOI18N
         jPanel1.add(Intento5, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 60, 270, 220));
 
@@ -938,7 +958,55 @@ public class AhorcadosVisual extends javax.swing.JFrame {
 
     private void actualizarIntentos() {
         if (Main.adminPalabrasSecretas.isModoFijo() && !Main.adminPalabrasSecretas.isModoAzar()) {   
-            if (juegoAhorcadoFijo.getIntentos() == 5) {
+            if(juegoAhorcadoFijo.getIntentos() == 9){
+                Intento9.setVisible(true);
+                Intento8.setVisible(false);
+                Intento7.setVisible(false);
+                Intento6.setVisible(false);
+                Intento5.setVisible(false);
+                Intento4.setVisible(false);
+                Intento3.setVisible(false);
+                Intento2.setVisible(false);
+                Intento1.setVisible(false);
+                Intento0.setVisible(false);
+            } else if (juegoAhorcadoFijo.getIntentos() == 8) {
+                Intento9.setVisible(false);
+                Intento8.setVisible(true);
+                Intento7.setVisible(false);
+                Intento6.setVisible(false);
+                Intento5.setVisible(false);
+                Intento4.setVisible(false);
+                Intento3.setVisible(false);
+                Intento2.setVisible(false);
+                Intento1.setVisible(false);
+                Intento0.setVisible(false);
+            } else if (juegoAhorcadoFijo.getIntentos() == 7) {
+                Intento9.setVisible(false);
+                Intento8.setVisible(false);
+                Intento7.setVisible(true);
+                Intento6.setVisible(false);
+                Intento5.setVisible(false);
+                Intento4.setVisible(false);
+                Intento3.setVisible(false);
+                Intento2.setVisible(false);
+                Intento1.setVisible(false);
+                Intento0.setVisible(false);
+            } else if (juegoAhorcadoFijo.getIntentos() == 6) {
+                Intento9.setVisible(false);
+                Intento8.setVisible(false);
+                Intento7.setVisible(false);
+                Intento6.setVisible(true);
+                Intento5.setVisible(false);
+                Intento4.setVisible(false);
+                Intento3.setVisible(false);
+                Intento2.setVisible(false);
+                Intento1.setVisible(false);
+                Intento0.setVisible(false);
+            } else if (juegoAhorcadoFijo.getIntentos() == 5) {
+                Intento9.setVisible(false);
+                Intento8.setVisible(false);
+                Intento7.setVisible(false);
+                Intento6.setVisible(false);
                 Intento5.setVisible(true);
                 Intento4.setVisible(false);
                 Intento3.setVisible(false);
@@ -946,6 +1014,10 @@ public class AhorcadosVisual extends javax.swing.JFrame {
                 Intento1.setVisible(false);
                 Intento0.setVisible(false);
             } else if (juegoAhorcadoFijo.getIntentos() == 4) {
+                Intento9.setVisible(false);
+                Intento8.setVisible(false);
+                Intento7.setVisible(false);
+                Intento6.setVisible(false);
                 Intento5.setVisible(false);
                 Intento4.setVisible(true);
                 Intento3.setVisible(false);
@@ -953,6 +1025,10 @@ public class AhorcadosVisual extends javax.swing.JFrame {
                 Intento1.setVisible(false);
                 Intento0.setVisible(false);
             } else if (juegoAhorcadoFijo.getIntentos() == 3) {
+                Intento9.setVisible(false);
+                Intento8.setVisible(false);
+                Intento7.setVisible(false);
+                Intento6.setVisible(false);
                 Intento5.setVisible(false);
                 Intento4.setVisible(false);
                 Intento3.setVisible(true);
@@ -960,6 +1036,10 @@ public class AhorcadosVisual extends javax.swing.JFrame {
                 Intento1.setVisible(false);
                 Intento0.setVisible(false);
             } else if (juegoAhorcadoFijo.getIntentos() == 2) {
+                Intento9.setVisible(false);
+                Intento8.setVisible(false);
+                Intento7.setVisible(false);
+                Intento6.setVisible(false);
                 Intento5.setVisible(false);
                 Intento4.setVisible(false);
                 Intento3.setVisible(false);
@@ -967,6 +1047,10 @@ public class AhorcadosVisual extends javax.swing.JFrame {
                 Intento1.setVisible(false);
                 Intento0.setVisible(false);
             } else if (juegoAhorcadoFijo.getIntentos() == 1) {
+                Intento9.setVisible(false);
+                Intento8.setVisible(false);
+                Intento7.setVisible(false);
+                Intento6.setVisible(false);
                 Intento5.setVisible(false);
                 Intento4.setVisible(false);
                 Intento3.setVisible(false);
@@ -974,6 +1058,10 @@ public class AhorcadosVisual extends javax.swing.JFrame {
                 Intento1.setVisible(true);
                 Intento0.setVisible(false);
             } else if (juegoAhorcadoFijo.getIntentos() == 0) {
+                Intento9.setVisible(false);
+                Intento8.setVisible(false);
+                Intento7.setVisible(false);
+                Intento6.setVisible(false);
                 Intento5.setVisible(false);
                 Intento4.setVisible(false);
                 Intento3.setVisible(false);
@@ -1112,6 +1200,10 @@ public class AhorcadosVisual extends javax.swing.JFrame {
     private javax.swing.JLabel Intento3;
     private javax.swing.JLabel Intento4;
     private javax.swing.JLabel Intento5;
+    private javax.swing.JLabel Intento6;
+    private javax.swing.JLabel Intento7;
+    private javax.swing.JLabel Intento8;
+    private javax.swing.JLabel Intento9;
     private javax.swing.JLabel IntentosLabel;
     private javax.swing.JLabel PalabraOcultaLabel;
     private javax.swing.JPanel jPanel1;
